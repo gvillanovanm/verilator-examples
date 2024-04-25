@@ -9,3 +9,9 @@ run_eg2:
 	
 compil_eg2:
 	vlog ../vlog/arith_eg2.sv ../vlog/arith_eg2_mod.sv
+
+run_eg3:
+	vsim +nowarn3116 -batch -do "run -all" work.arith_eg3
+	
+compil_eg3:
+	vlog ../vlog/arith_eg3.sv ../vlog/arith_eg3_mod.sv
