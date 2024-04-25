@@ -18,7 +18,7 @@ module arith_eg2;
                 $display("%0.2f %%", real'(i) / real'(NUM_OF_CYCLES) * 100);
 
             a   = $urandom;
-            b   = $urandom;
+            b   = $urandom  ;
 
             /* verilator lint_off WIDTHTRUNC */
             sel = $urandom_range(3, 0);
