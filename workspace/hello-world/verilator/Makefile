@@ -17,3 +17,9 @@ run_eg3: compil_eg3
 
 compil_eg3:
 	verilator -CFLAGS $(CXXFLAGS) --binary -j 0 -Wall --top-module arith_eg3 ../vlog/arith_eg3.sv ../vlog/arith_eg3_mod.sv
+
+run_vcd_eg3: compil_vcd_eg3
+	./obj_dir/Varith_eg3
+
+compil_vcd_eg3:
+	verilator --trace -CFLAGS $(CXXFLAGS) --binary -j 0 -Wall --top-module arith_eg3 ../vlog/arith_eg3.sv ../vlog/arith_eg3_mod.sv

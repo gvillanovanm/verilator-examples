@@ -11,6 +11,7 @@ module arith_eg2;
     );
 
     initial begin 
+        $dump_vcd()
         $display("Hello World"); 
 
         for(int i=0; i<NUM_OF_CYCLES; i++) begin

@@ -16,6 +16,8 @@ module arith_eg3;
     always #(5) clk<=~clk;
 
     initial begin 
+        $dumpfile("test.vcd");
+        $dumpvars;
         $display("Hello World"); 
 
         for(int i=0; i<NUM_OF_CYCLES; i++) begin
